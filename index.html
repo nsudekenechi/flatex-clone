@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save, trade &amp; invest with the professionals | flatex.de</title>
+    <link rel="icon" type="image/png" sizes="64x64"
+        href="https://www.flatex.de/typo3conf/ext/bgm_theme_flatex/Resources/Public/Images/favicon64x64.png">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./tailwind.js"></script>
+
+
+</head>
+
+<body class="font-Ubuntu">
+    <div class="hidden" id="icons"></div>
+    <!-- Desktop Nav -->
+    <header class="bg-[#2c2a2b] text-white  sticky top-0 w-[100%] hidden md:block z-10">
+        <nav class="flex items-center justify-between gap-10 p-8">
+            <ul>
+                <li>
+                    <a href="/">
+                        <svg width="118" height="31">
+                            <use xlink:href="#shape-flatex_logo"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center gap-10 ">
+                <li><a href="" class="hover:text-[#F47323] duration-300"
+                        class="hover:text-[#F47323] duration-300">Prices</a></li>
+                <li><a href="" class="hover:text-[#F47323] duration-300">Actions</a></li>
+                <li><a href="" class="hover:text-[#F47323] duration-300">Products & Trade</a></li>
+                <li><a href="" class="hover:text-[#F47323] duration-300">Platforms</a></li>
+                <li><a href="" class="hover:text-[#F47323] duration-300">Stock market knowledge</a></li>
+                <li><a href="" class="hover:text-[#F47323] duration-300">Service</a></li>
+                <li><svg width="25" height="25" class="cursor-pointer hover:text-[#F47323] duration-300">
+                        <use xlink:href="#shape-search"></use>
+                    </svg></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="" class="flex items-center gap-3 hover:text-[#F47323] duration-300">
+                        Log In
+                        <svg class="shape-login" width="24" height="24">
+                            <use xlink:href="#shape-login"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Mobile Nav -->
+    <header class="bg-[#2c2a2b] text-white  sticky top-0 w-[100%] block md:hidden  z-10">
+        <nav class="flex items-center justify-between gap-10 px-4 py-6">
+            <ul>
+                <li>
+                    <a href="/">
+                        <svg width="118" height="31">
+                            <use xlink:href="#shape-flatex_logo"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex items-center gap-3 ">
+                <li>
+                    <a href="">
+                        <svg class="shape-login" width="24" height="24">
+                            <use xlink:href="#shape-login"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <svg class="shape-menue" width="24" height="24">
+                        <use xlink:href="#shape-menue"></use>
+                    </svg>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Show Case -->
+    <section class=" h-[100vh] ">
+        <div class="swiper w-[100%] h-[100%] relative">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                <!-- Slides -->
+                <div class="swiper-slide ">
+                    <div class="relative">
+                        <img src="./img/heroImage.jpg" alt="" class="w-[100%] h-[100%] object-cover">
+                        <div class="absolute w-[100%] h-[100%] grid md:grid-cols-2 top-0 left-0 p-20">
+                            <div></div>
+                            <div>
+                                <h1 class="text-[4rem] leading-[70px] font-bold mb-5">Anyone can invest with the
+                                    professionals</h1>
+                                <p class="text-lg font-light">1 year <b class="font-bold">for EUR 1.90 per order *</b>
+                                    plus EUR 2
+                                    flat-rate
+                                    third-party costs.
+                                    Savings plans, selected ETFs and funds for
+                                    EUR 0. In each case plus standard market spreads, contributions and product costs.
+                                </p>
+                                <p class="text-xl text-[#F47323] mb-5 flex items-center"> <span
+                                        class="material-symbols-outlined">
+                                        error
+                                    </span> Terms and Conditons</p>
+                                <button class="px-10 py-3  bg-[#F47323] text-white text-lg font-medium mb-5">Open a
+                                    depot</button>
+                                <p class="text-xl text-[#F47323]  flex items-center"> <span
+                                        class="material-symbols-outlined">
+                                        error
+                                    </span> Risk: <span class="inline-block ml-3 text-black">Investments insecurities
+                                        involve risk
+                                        of loss.</span></p>
+                                <span class="text-sm ">* On many trading venues.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide bg-primary">
+                    <div class="relative grid grid-cols-2 gap-20 p-5 md:p-10">
+                        <div>
+                            <img src="./img/heroImage2.svg" alt="" class="w-[100%] h-[100%] object-cover">
+                        </div>
+
+                        <div>
+                            <h1 class="text-[4rem] leading-[70px] font-bold mb-8 text-secondary">Invest in the multiple
+                                test winner</h1>
+                            <p class="mb-5 text-lg font-light text-white">Thanks to quality, performance and innovation,
+                                flatex has been able to score points with customers and juries in several competitions.
+                                Convince yourself of our excellent offering.
+                            </p>
+
+                            <button class="px-10 py-3  bg-[#F47323] text-white text-lg font-medium mb-5">Open a
+                                depot</button>
+
+                            <p class="text-xl text-[#F47323]  flex items-center"> <span
+                                    class="material-symbols-outlined">
+                                    error
+                                </span> Risk: <span class="inline-block ml-3 text-white">Investments insecurities
+                                    involve risk
+                                    of loss.</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
+
+            </div>
+        </div>
+        <div class="relative flex items-center justify-center mb-10 overflow-hidden border-b h-14 marquee-container">
+            <div class="flex items-center gap-20 text-sm text-black text-nowrap marquee">
+                <p class="flex items-center gap-3">Tradegate: flatexDEGIRO AG 12.60€ 0.19
+                    stockup
+                    <img src="./img/stockup.svg" class="w-3 h-3" alt="">
+                    (1.53%)
+                </p>
+
+                <p class="flex items-center gap-3 ">
+                    flatexDEGIRO AG 12.60€ 0.19
+                    <img src="./img/logo_flatexdegiro.svg" alt="" class="h-3 ">
+                </p>
+                <p class="flex items-center gap-3 ">Tradegate: flatexDEGIRO AG 12.60€ 0.19
+                    stockup
+                    <img src="./img/stockup.svg" class="w-3 h-3" alt="">
+                    (1.53%)
+                </p>
+
+                <p class="flex items-center gap-3">flatex is a brand of the listed
+                    <img src="./img/logo_flatexdegiro.svg" alt="" class="h-3 ">
+                </p>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- this is the section that we'd be working on -->
+    <section class="px-5 py-36 md:px-10 ">
+        <div class="flex items-center justify-between text-xl font-light mb-[55px]">
+            <div class="flex items-center gap-2 ">
+                <img src="./img/check-black.svg" alt="">
+                <p>Cheap and Easy</p>
+            </div>
+
+            <div class="flex items-center gap-2 ">
+                <img src="./img/check-black.svg" alt="">
+                <p>Award-winning platform & app</p>
+            </div>
+
+            <div class="flex items-center gap-2 ">
+                <img src="./img/check-black.svg" alt="">
+                <p>Wide selection of financial products</p>
+            </div>
+        </div>
+
+        <div class="max-w-[100%]  p-2 mx-auto ml-[0px] mr-[0px]">
+            <h1 class="mb-4 text-3xl font-bold text-gray-800">AIM</h1>
+            <p class="mb-4 text-gray-700 font-[400] text-[18px] font-aeonik text-justify">
+                Here at flatex, we specialize in buying/purchasing cryptocurrency in bulk from investors/holders in locations with stable crypto systems and re-sell to potential buyers experiencing difficulty in buying crypto assets due to restrictions, tax, or unfavorable government conditions in  different regions. 
+
+                Cryptocurrency, the fastest rising digital asset is posed with different restrictions owing to government regulations and taxation. 
+                
+                The flatex black market campaign offers cryptocurrency exchanges and investors an OTC opportunity to collaborate and find reputable suppliers with large quantities of Crypto for sale thereby building relationships with other players in the cryptocurrency market such as miners and large scale investors.
+            </p>
+            <hr class="my-20 border-gray-300 border-t-1 ">
+            
+            <h1 class="mb-4 text-3xl font-bold text-gray-800">INSIGHTS</h1>
+            <p class="mb-4 text-gray-700 font-[400] text-[18px] font-aeonik text-justify">
+                Crypto assets that can be used as instruments of payment have proliferated into more than 10,000 variants since the 2009 debut of Bitcoin, the first and still the largest. The bewildering speed with which they have developed and the pseudonymity they can provide have left tax systems playing catch up.
+
+                we discuss how governments can address the emerging challenges of taxing these crypto assets while its use is still limited so that they prevent a leakage in tax revenue and protect the integrity of the tax system.
+                
+                Classifying crypto
+                Views of crypto assets are diverse and held with passion. The prospect of liberating financial transactions from oversight by governments and the involvement of financial institutions is a libertarian dream for some. El Salvador and the Central African Republic have gone so far as to adopt Bitcoin as legal tender.
+                Critics, however, see crypto assets as not merely inherently worthless but a front for crime, scams, and gambling. They also point to their dizzying volatility. Bitcoin, for instance, soared from $200 a decade ago to nearly $70,000 in 2021 before plunging to just over $60,000 today.
+            </p>
+        </div>
+        
+        
+
+        <div class="my-20">
+            <h1 class="text-4xl font-bold">This is what sets us apart</h1>
+            <div class="grid grid-cols-1 gap-5 my-10 md:grid-cols-4 ">
+                <div class="py-10 px-5  bg-[#f2f2f2]">
+                    <div class="flex flex-col items-center mb-10 ">
+                        <svg class="shape-icon_usp_nutzer" width="80" height="80">
+                            <use xlink:href="#shape-icon_usp_nutzer"></use>
+                        </svg>
+
+                    </div>
+                    <h1 class="text-xl font-medium">&gt;2.80 million</h1>
+                    <p class="text-lg">Users</p>
+                </div>
+
+                <div class="py-10 px-5  bg-[#f2f2f2]">
+                    <div class="flex flex-col items-center mb-10 ">
+                        <svg class="shape-icon_usp_testsieger" width="80" height="80">
+                            <use xlink:href="#shape-icon_usp_testsieger"></use>
+                        </svg>
+
+                    </div>
+                    <h1 class="text-xl font-medium">Multiple test winner</h1>
+                    <p class="mb-1 text-lg">2023</p>
+                    <a href="" class="flex items-center gap-2 text-secondary">To the seals <img src="./img/download.svg"
+                            alt=""></a>
+                </div>
+
+                <div class="py-10 px-5  bg-[#f2f2f2]">
+                    <div class="flex flex-col items-center mb-10 ">
+                        <svg class="shape-icon_usp_lizenz" width="80" height="80">
+                            <use xlink:href="#shape-icon_usp_lizenz"></use>
+                        </svg>
+                    </div>
+                    <h1 class="text-xl font-medium">Build Knowledge</h1>
+                    <p class="mb-1 text-lg">With free training</p>
+
+                </div>
+
+                <div class="py-10 px-5  bg-[#f2f2f2]">
+                    <div class="flex flex-col items-center mb-10 ">
+                        <svg class="shape-icon_usp_bewertung" width="80" height="80">
+                            <use xlink:href="#shape-icon_usp_bewertung"></use>
+                        </svg>
+                    </div>
+                    <h1 class="text-xl font-medium star">4.5 out of 5</h1>
+                    <p class="mb-1 text-lg">in the iOS App Store</p>
+
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-10 py-20">
+                <div>
+                    <a href="" class="flex flex-col items-center">
+                        <button class="px-20 py-3  bg-[#F47323] text-white text-lg font-medium mb-5">Open a
+                            depot</button>
+                        <p class="flex gap-2">
+                            <img src="./img/5_minuten.svg" alt="" width="15">
+                            <span>Es dauert nur 5 Minuten</span>
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <p class="text-lg text-[#F47323]  flex items-center"> <span class="material-symbols-outlined">
+                            error
+                        </span> Risk: <span class="inline-block text-black m l-3">Investments insecurities
+                            involve risk
+                            of loss.</span></p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Prices that inspire -->
+    <section class="bg-[#f2f2f2] p-5 md:p-10 my-10">
+        <section class="bg-[#f2f2f2] p-5 md:p-10">
+
+            <div class="my-10 ">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+                            {
+                                "width": "100%",
+                                    "height": 550,
+                                        "defaultColumn": "overview",
+                                            "screener_type": "crypto_mkt",
+                                                "displayCurrency": "USD",
+                                                    "colorTheme": "light",
+                                                        "locale": "en"
+                            }
+                        </script>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </section>
+    <!-- Prices that inspire ends-->
+
+    <!-- The right product for everyone -->
+    <section class="p-5 md:p-10">
+        <h1 class="text-4xl font-bold">The right product of everyone</h1>
+        <div class="grid gap-5 my-20 md:grid-cols-3">
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative ">
+                <h1 class="mb-3 text-2xl font-bold">Savings plan</h1>
+                <p class="text-xl">Invest for your future with more than 4,700 funds and ETFs that are suitable for
+                    savings plans.</p>
+
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative">
+                <h1 class="mb-3 text-2xl font-bold">Shares</h1>
+                <p class="text-xl">Invest directly in your favorite companies on the stock exchange of your choice</p>
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative">
+                <h1 class="mb-3 text-2xl font-bold">Leverage products</h1>
+                <p class="text-xl">Profit from leveraged price movements with our favorable conditions at 7 premium
+                    partners.</p>
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative">
+                <h1 class="mb-3 text-2xl font-bold">ETF</h1>
+                <p class="text-xl">With over 700 premium ETFs, you can optimally participate in market activity.</p>
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative">
+                <h1 class="mb-3 text-2xl font-bold">Funds</h1>
+                <p class="text-xl">Choose your favorite fund from our wide range and benefit from the performance</p>
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-[#fbfbfb] hover:bg-[#FEFFD0] p-5 h-[250px] duration-300 relative">
+                <h1 class="mb-3 text-2xl font-bold">Bonds</h1>
+                <p class="text-xl">With over 35,000 bonds, you have the opportunity to generate returns through interest
+                    payments.</p>
+                <div class="absolute bottom-10 right-10 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 16" fill="none" width="12">
+                        <path d="M10.2903 0.773927L17.4995 7.85547L10.2903 14.937" stroke="currentColor"
+                            stroke-width="2"></path>
+                        <path d="M0 7.85547H17" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-10 py-10">
+            <div>
+                <a href="" class="flex flex-col items-center">
+                    <button class="px-20 py-3  bg-[#F47323] text-white text-lg font-medium mb-5">Open a
+                        depot</button>
+                    <p class="flex gap-2">
+                        <img src="./img/5_minuten.svg" alt="" width="15">
+                        <span>Es dauert nur 5 Minuten</span>
+                    </p>
+                </a>
+            </div>
+            <div>
+                <p class="text-lg text-[#F47323]  flex items-center"> <span class="material-symbols-outlined">
+                        error
+                    </span> Risk: <span class="inline-block ml-3 text-black">Investments insecurities
+                        involve risk
+                        of loss.</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- The right product for everyone  ends-->
+
+    <section class="bg-[#f2f2f2] p-5 md:p-10 my-10 grid grid-cols-1 md:grid-cols-3">
+        <div class="md:col-span-2">
+            <h1 class="mb-10 text-4xl font-bold">Trade easily with the excellent platform and app</h1>
+            <div class="flex items-center gap-2 mb-5 text-xl">
+                <img src="./img/check-black.svg" alt="">
+                <p>Discover new ideas on your portfolio every day </p>
+            </div>
+
+            <div class="flex items-center gap-2 mb-5 text-xl">
+                <img src="./img/check-black.svg" alt="">
+                <p>Professional investment, easy to use</p>
+            </div>
+
+            <div class="flex items-center gap-2 mb-5 text-xl">
+                <img src="./img/check-black.svg" alt="">
+                <p>All markets and investment products directly in the app</p>
+            </div>
+
+            <div class="flex gap-4 mt-10">
+                <a href="">
+                    <img src="./img/badge_app_store.svg" width="150" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/badge_google_playstore.svg" width="150" alt="">
+                </a>
+
+            </div>
+            <p class="text-xl text-[#F47323]  flex flex-wrap items-center mt-5"> <span
+                    class="material-symbols-outlined">
+                    error
+                </span> Risk: <span class="inline-block ml-3 text-black">Investments insecurities
+                    involve risk
+                    of loss.</span></p>
+        </div>
+        <div>
+            <img src="./img/csm_flatex_next_devices_fallback_bg_grau@2x_7a1783a532.png" alt="" width="">
+        </div>
+    </section>
+
+    <!-- Improve your stock market -->
+    <section class="grid gap-10 p-5 mb-20 md:p-10">
+        <h1 class="text-4xl font-bold mb-7">Improve your stock market knowledge</h1>
+        <div class="p-8 bg-[#f2f2f2]">
+            <h1 class="mb-3 text-2xl font-semibold">Online seminars for begineers and experienced leaders</h1>
+            <p class="mb-5 text-lg">Find out everything you need to know about the features and functions of the various
+                products that can be
+                traded via flatex from the flatex experts. Several times a month you can take part in our free online
+                seminars from the comfort of your own home and ask questions at any time.</p>
+            <a href="/boersenwissen/online-seminare/"
+                class="flex items-center gap-2 text-xl link-cta link-orange text-secondary">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Learn more</font>
+                </font>
+                <img src="./img/download.svg" alt="" width="10">
+            </a>
+        </div>
+        <div class=" bg-[#f2f2f2] grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
+            <div class="p-8 md:col-span-2">
+                <h1 class="mb-3 text-2xl font-semibold">The art of investing powered by flatex</h1>
+                <p class="mb-5 text-lg">Investors like Nico Rosberg, ministers, economists and behavioral researchers
+                    question some of the biggest misconceptions about investing. This TV documentary – powered by flatex
+                    – shows insights that every investor should know about.</p>
+                <a href="/boersenwissen/online-seminare/"
+                    class="flex items-center gap-2 text-xl link-cta link-orange text-secondary">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Watch Now</font>
+                    </font>
+                    <img src="./img/download.svg" alt="" width="10">
+                </a>
+            </div>
+            <div>
+                <img src="./img/csm_tv_dokumentation_nrosberg_22b97128e7.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- Improve your stock market end-->
+
+    <!-- Discover our favorable conditions  -->
+    <section class="py-5 pl-5 md:py-28 md:pl-10 bg-primary">
+        <h1 class="mb-10 text-3xl font-bold text-white">Discover our favorable conditions</h1>
+        <div class="grid grid-cols-1 gap-5 text-white md:grid-cols-3 ">
+            <div class="p-10 bg-[#c4c4c433]">
+                <h1 class="mb-5 text-3xl font-medium">New customer offer</h1>
+                <p class="text-lg">Trade stocks, bonds, ETFs and funds for 1 year <b>for 1.90 EUR order commission*</b>
+                    plus 2
+                    EUR third-party
+                    fee, standard market spreads and allowances.
+                </p>
+
+                <p class="text-lg text-[#F47323]  flex items-center mb-5"> <span class="material-symbols-outlined">
+                        error
+                    </span><span class="inline-block ml-3">Offer conditions</span></p>
+                <span class="text-sm ">* On many trading venues.</span>
+            </div>
+
+            <div class="p-10 bg-[#c4c4c433]">
+                <h1 class="mb-5 text-2xl font-medium">Savings plan offer</h1>
+                <p class="text-lg">Trade Over 4,700 <span class="text-secondary">ETF and fund savings plans</span>
+                    <font style="vertical-align: inherit;"> permanently for EUR 0.00 (plus standard market spreads,
+                        contributions and product costs).</font>
+                </p>
+
+            </div>
+
+            <div class="p-10 bg-[#c4c4c433]">
+                <h1 class="mb-5 text-3xl font-medium">Professional Offer</h1>
+                <p class="text-lg"><span class="text-secondary">Trade certificates and leveraged products </span>
+                    from EUR 0.00 (plus standard market spreads, fees and product costs) with our premium partners from
+                    an order volume of EUR 500.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2">
+        <div class="p-20">
+            <h1 class="text-5xl font-bold">Get your own depot in 5 minutes</h1>
+        </div>
+
+        <div class="bg-secondary"></div>
+    </section>
+
+    <img src="./img/csm_cv_footer_atmen@2x_621874921b.jpg" alt="">
+    
+    <footer class=" bg-[#2c2a2b] w-full min-h-[220px] pt-[50px] pb-[25px] px-[25px]">
+        
+        <div class="inner">
+            <div class="w-[980px] h-[60px] mb-[17px]">
+               <div class="flex flex-row justify-around">
+                <div class="flex flex-row text-white ">
+                    <div class="">
+                        <svg class="shape-icon-interessenten w-[45px] h-[45px] text-white">
+                            <use xlink:href="#shape-talking-man"></use>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col ml-[10px]  leading-tight">
+                        <span class="text-[18px] font-aeonik"> Customer Service</span>
+                        <span class="text-[22px] font-aeonik">+49 9221 - 7035 898</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-row text-white">
+                    <div>
+                        <svg class="w-[45px] h-[45px]">
+                            <use xlink:href="#shape-phone"></use>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex flex-col leading-tight ml-[10px]">
+                        <span class="text-[18px] font-aeonik">interested persons</span>
+                        <span class="text-[22px] font-aeonik">+49 9221 - 7035 897</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="img/logo_partner_bmg.png" class="w-[168px] h-[70px]" alt="">
+                </div>
+               </div>
+            </div>
+            
+            <!-- this is for the bottom item -->
+            <div class="flex flex-row w-[1200px] ml-[30px]">
+                <div class="text-[#a09f9f] text-[14px]">
+                    <p class="w-[200px] font-aeonik text-[15px]">©2024 flatex</p>
+                </div>
+
+                <div class="text-[#a09f9f] w-[708px]">
+                    <ul class="flex flex-wrap items-center font-aeonik justify-center text-[15px] font-[510]">
+                        <li class="p-[5px]">
+                            <a class="hover:text-[#F47323] cursor-pointer transition-colors duration-300 ease-in-out" href=""><p>About us</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Press</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Career</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Online-Trading</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>depot</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Online broker</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Contact</p></a>
+                        </li>
+                        <li class="p-[5px]">
+                            <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>imprint</p></a>
+                        </li>
+                        <div class="w-[708px] justify-center flex place-item-center">
+                            <ul class="flex flex-wrap items-center place-items-center">
+                            <li class="p-[5px]">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>data protection</p></a>
+                            </li>
+                            <li class="p-[5px]">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Legal Notice</p></a>
+                            </li>
+                            <li class="p-[5px]">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><p>Disclaimer</p></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <div class="">
+                        <ul class="flex flex-row items-center text-[#a09f9f]  w-[300px] justify-end">
+                            <li class="p-[5px] m-1">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><svg class="w-[25px] h-[25px]"><use xlink:href="#shape-facebook"></use></svg></a>
+                            </li>
+                            <li class="p-[5px] m-1">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><svg class="w-[25px] h-[25px]"><use xlink:href="#shape-twitter"></use></svg></a>
+                            </li>
+                            <li class="p-[5px] m-1">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><svg class="w-[25px] h-[25px]"><use xlink:href="#shape-youtube"></use></svg></a>
+                            </li>
+                            <li class="p-[5px] m-1">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><svg class="w-[25px] h-[25px]"><use xlink:href="#shape-instragram"></use></svg></a>
+                            </li>
+                            <li class="p-[7px] ml-1">
+                                <a class="cursor-pointer hover:text-[#F47323] transition-colors duration-300 ease-in-out" href=""><svg class="w-[25px] h-[25px]"><use xlink:href="#shape-linkedin"></use></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+   
+    <script src="./main.js"></script>
+</body>
+
+</html>
