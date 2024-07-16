@@ -26,16 +26,16 @@
 
 
     <!-- Show Case -->
-    <section class=" h-[90vh] relative">
+    <section class="h-[100vh] md:h-[90vh] relative">
         <img src="./img/heroImage.jpg" alt="" class="w-[100%] h-[100%] object-cover">
-        <div class="absolute w-[100%] h-[100%] grid md:grid-cols-2 top-0 left-0 p-20">
+        <div class="absolute w-[100%] h-[100%] grid md:grid-cols-2 top-0 left-0 p-5 md:p-20">
             <div></div>
             <div>
-                <h1 class="mb-5 text-5xl font-bold">
+                <h1 class="mb-5 text-2xl md:text-5xl font-bold">
                     <span class="text-secondary">Flatex</span> black market brokerage: Anyone can collaborate with the
                     right professionals
                 </h1>
-                <p class="text-lg font-light">Here at flatex, we specialize in buying/purchasing
+                <p class="text-sm md:text-lg font-light">Here at flatex, we specialize in buying/purchasing
                     cryptocurrency in bulk from investors/holders in locations with stable crypto
                     systems and re-sell to potential buyers experiencing difficulty in buying crypto
                     assets due to restrictions, tax, or unfavorable government conditions in
@@ -75,7 +75,7 @@
 
     <!-- this is the section that we'd be working on -->
     <section class="px-5 py-36 md:px-10 ">
-        <div class="flex items-center justify-between text-xl font-light mb-[55px]">
+        <div class="flex flex-wrap items-center justify-between gap-3 md:text-xl font-light mb-[55px]">
             <div class="flex items-center gap-2 ">
                 <img src="./img/check-black.svg" alt="">
                 <p>Cheap and Easy</p>
@@ -92,9 +92,9 @@
             </div>
         </div>
 
-        <div class="max-w-[100%]  p-2 mx-auto ml-[0px] mr-[0px]">
+        <div class="max-w-[100%]  p-2 mx-auto ml-[0px] ">
             <h1 class="mb-4 text-3xl font-bold text-gray-800">AIM</h1>
-            <p class="mb-4 text-gray-700 font-[400] text-[18px] font-aeonik text-justify">
+            <p class="mb-4 text-gray-700  text-sm md:text-[18px] font-aeonik leading-6 ">
                 Here at flatex, we specialize in buying/purchasing cryptocurrency in bulk from investors/holders in
                 locations with stable crypto systems and re-sell to potential buyers experiencing difficulty in buying
                 crypto assets due to restrictions, tax, or unfavorable government conditions in different regions.
@@ -109,7 +109,7 @@
             <hr class="my-20 border-gray-300 border-t-1 ">
 
             <h1 class="mb-4 text-3xl font-bold text-gray-800">INSIGHTS</h1>
-            <p class="mb-4 text-gray-700 font-[400] text-[18px] font-aeonik text-justify">
+            <p class="mb-4 text-gray-700  text-sm md:text-[18px] font-aeonik leading-6 ">
                 Crypto assets that can be used as instruments of payment have proliferated into more than 10,000
                 variants since the 2009 debut of Bitcoin, the first and still the largest. The bewildering speed with
                 which they have developed and the pseudonymity they can provide have left tax systems playing catch up.
@@ -187,49 +187,42 @@
     </section>
     <!-- Prices that inspire -->
     <section class="bg-[#f2f2f2] p-5 md:p-10 my-10">
-        <section class="bg-[#f2f2f2] p-5 md:p-10">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
 
-            <div class="my-10 ">
-                <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-                            {
-                                "width": "100%",
-                                    "height": 550,
-                                        "defaultColumn": "overview",
-                                            "screener_type": "crypto_mkt",
-                                                "displayCurrency": "USD",
-                                                    "colorTheme": "light",
-                                                        "locale": "en"
-                            }
-                        </script>
-                </div>
-
-            </div>
-            </div>
-        </section>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+                async>
+                    {
+                        "width": "100%",
+                            "height": 550,
+                                "defaultColumn": "overview",
+                                    "screener_type": "crypto_mkt",
+                                        "displayCurrency": "USD",
+                                            "colorTheme": "light",
+                                                "locale": "en"
+                    }
+                </script>
+        </div>
     </section>
     <!-- Prices that inspire ends-->
 
 
     <section class="grid grid-cols-1 p-5 my-10 md:p-10 md:grid-cols-3">
         <div class="md:col-span-2">
-            <h1 class="mb-10 text-4xl font-bold">Trade easily with the excellent platform</h1>
-            <div class="flex items-center gap-2 mb-5 text-xl">
+            <h1 class="mb-10 text-xl md:text-4xl font-bold">Trade easily with the excellent platform</h1>
+            <div class="flex items-center gap-2 mb-5 text-sm md:text-xl">
                 <img src="./img/check-black.svg" alt="">
                 <p>CONTACT US
                 </p>
             </div>
 
-            <div class="flex items-center gap-2 mb-5 text-xl">
+            <div class="flex items-center gap-2 mb-5 text-sm md:text-xl">
                 <img src="./img/check-black.svg" alt="">
                 <p>SUBMIT TICKET
                 </p>
             </div>
 
-            <div class="flex items-center gap-2 mb-5 text-xl">
+            <div class="flex items-center gap-2 mb-5 text-sm md:text-xl">
                 <img src="./img/check-black.svg" alt="">
                 <p>REFFERAL CAMPAIGN</p>
             </div>
@@ -242,71 +235,60 @@
 
 
     <!-- Discover our favorable conditions  -->
-    <section class="py-5 pl-5 md:py-28 md:pl-10 bg-primary">
+    <section class="py-5 px-5 md:px-0 md:py-28 md:pl-10 bg-primary">
         <h1 class="mb-10 text-3xl font-bold text-white">Discover our favorable conditions</h1>
         <div class="grid grid-cols-1 gap-5 text-white md:grid-cols-3 ">
             <div class="p-8 bg-[#c4c4c433]">
                 <h1 class="mb-5 text-3xl font-medium">Networking</h1>
-                <p class="text-lg text-justify">
-                    Building relationships with other players in the cryptocurrency market such as miners and large scale investors while also creating a Refferal marketing for interested individuals with lead contacts on interested collaborators around the world. 
+                <p class="md:text-lg ">
+                    Building relationships with other players in the cryptocurrency market such as miners and large
+                    scale investors while also creating a Refferal marketing for interested individuals with lead
+                    contacts on interested collaborators around the world.
                 </p>
             </div>
 
             <div class="p-10 bg-[#c4c4c433]">
                 <h1 class="mb-5 text-2xl font-medium">Personalized Market Inflation</h1>
-                <p class="text-lg text-justify">
-                    The cryptocurrency market is faced with inflation and deflation, We offer to buy above market price from large scale holders in crypto regulated zones to prevent losses due to unstable crypto price. 
+                <p class="md:text-lg lg:">
+                    The cryptocurrency market is faced with inflation and deflation, We offer to buy above market price
+                    from large scale holders in crypto regulated zones to prevent losses due to unstable crypto price.
                 </p>
 
             </div>
 
             <div class="p-10 bg-[#c4c4c433]">
                 <h1 class="mb-5 text-2xl font-medium">ESCROW TRANSACTIONS</h1>
-                <p class="text-lg text-justify">
-                    Flatex uses an escrow, secure payment method from a counterparty risk perspective safeguarding both buyer and seller.
+                <p class="md:text-lg lg:">
+                    Flatex uses an escrow, secure payment method from a counterparty risk perspective safeguarding both
+                    buyer and seller.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2">
-        <div class="p-20">
-            <h1 class="text-5xl font-bold">Get your own depot in 5 minutes</h1>
-        </div>
-
-        <div class="bg-secondary"></div>
-    </section>
-
-    <img src="./img/csm_cv_footer_atmen@2x_621874921b.jpg" alt="">
-
-    <footer class=" bg-[#2c2a2b] w-full min-h-[220px] pt-[50px] pb-[25px] px-[50px]">
-
-        <div class="h-[20px]">
-            <div class="  mb-[17px]">
-                <div class="flex flex-row items-center justify-around">
-                    <div class="flex flex-row text-white ">
-                        <div class="">
-                            <svg class="shape-icon-interessenten w-[45px] h-[45px] text-white">
-                                <use xlink:href="#shape-talking-man"></use>
-                            </svg>
-                        </div>
-                        <div class="flex flex-col ml-[10px]  leading-tight">
-                            <span class="text-[18px] font-aeonik"> Customer Service</span>
-                            <span class="text-[22px] font-aeonik">+49 9221 - 7035 898</span>
-                        </div>
-                    </div>
 
 
-                    <div>
-                        <img src="img/logo_partner_bmg.png" class="w-[168px] h-[70px]" alt="">
-                    </div>
+    <footer class=" bg-[#2c2a2b] w-full  pt-[50px] pb-[25px] px-10 md:px-[50px]">
+        <div class="flex flex-wrap  items-center justify-around">
+            <div class="flex gap-2 text-white ">
+                <div class="">
+                    <svg class="shape-icon-interessenten w-[45px] h-[45px] text-white">
+                        <use xlink:href="#shape-talking-man"></use>
+                    </svg>
+                </div>
+                <div class="flex flex-col   leading-tight">
+                    <span class="text-xl md:text-[18px] font-aeonik"> Customer Service</span>
+                    <span class="text-xl md:text-[22px] font-aeonik">+49 9221 - 7035 898</span>
                 </div>
             </div>
 
+
+            <div>
+                <img src="img/logo_partner_bmg.png" class="w-[168px] h-[70px]" alt="">
             </div>
         </div>
     </footer>
-       
+
     <script src="./main.js"></script>
 </body>
 
