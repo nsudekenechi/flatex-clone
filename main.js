@@ -34,10 +34,10 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
                 index + 1 <= 10 && (
                     coinList.innerHTML += ` <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
                     <td class="border">
-                        <div class="flex items-center justify-center gap-3">
+                        <div class="flex items-center md:justify-center gap-3">
                             <img src='${coin.image}'alt=""
                                 class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> ${coin.name} <span class='uppercase'> (${coin.symbol})</span></span>
+                            <span class="md:w-[10%] text-nowrap"> ${coin.name} <span class='uppercase'> (${coin.symbol})</span></span>
                         </div>
 
                     </td>
