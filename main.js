@@ -31,6 +31,9 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
         setTimeout(() => {
             coinList.innerHTML = ""
             coins.forEach((coin, index) => {
+                let percent = coin.current_price > 1 ? 0.4 : 0.5;
+                let price = coin.current_price * percent;
+                let actualPrice = coin.current_price + price;
                 index + 1 <= 10 && (
                     coinList.innerHTML += `   <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
                     <td class="border">
@@ -43,7 +46,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
                     </td>
 
                     <td class="border">${new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(coin.current_price)}</td>
-                    <td class="border">${new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(coin.current_price * 0.9)}</td>
+                    <td class="border">${new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(actualPrice)}</td>
                 </tr>`
                 )
             })
