@@ -34,17 +34,17 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
                 index + 1 <= 10 && (
                     coinList.innerHTML += ` <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
                     <td class="border">
-                        <div class="flex items-center md:justify-center gap-3">
+                        <div class="flex items-center md:justify-center gap-3 pl-2">
                             <img src='${coin.image}'alt=""
                                 class="w-5 h-5 object-cover">
-                            <span class="md:w-[10%] text-nowrap"> ${coin.name} <span class='uppercase'> (${coin.symbol})</span></span>
+                            <span class="md:w-[10%] text-nowrap"> ${coin.name} </span>
                         </div>
 
                     </td>
 
-                    <td class="border">${new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(coin.current_price)}</td>
+                    
                     <td class="border">
-                    <div class='flex items-center justify-center gap-2'>
+                    <div class='pl-2 flex items-center md:justify-center gap-2'>
                         <span> ${new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(coin.current_price)} </span>
                           <sup class='text-green-500'>+${coin.current_price > 1 ? '30%' : '40%'}
                           </sup>
