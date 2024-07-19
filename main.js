@@ -15,3 +15,10 @@ const swiper = new Swiper('.swiper', {
 
 
 });
+const key = "CG-4MjDXpJJ2oCvPhUmUG5a5dCz";
+const options = { method: 'GET', headers: { accept: 'application/json', Authorization: `Bearer ${key}` } };
+
+fetch('https://pro-api.coingecko.com/api/v3/ping', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
