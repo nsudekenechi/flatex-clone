@@ -15,6 +15,8 @@
     <!-- Google Fonts -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/2db962e606.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="./tailwind.js"></script>
 
@@ -286,103 +288,13 @@
                     <th class="">We Sell</th>
                 </tr>
             </thead>
-            <tbody class="text-sm">
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=032" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> Bitcoin (BTC)</span>
+            <tbody class="text-sm" id="coinList">
+                <tr>
+                    <td colspan="3">
+                        <div class="flex items-center justify-center h-[20vh]">
+                            <i class="fa-solid fa-spinner animate-spin text-2xl text-secondary"></i>
                         </div>
-
                     </td>
-
-                    <td class="border">$64,346.0494</td>
-                    <td class="border">$60,346.0494</td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> Etherum (ETH)</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$3,430.00</td>
-                    <td class="border">$2,430.00</td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=032" alt=""
-                                class="w-5 h-5 object-contain">
-                            <span class="text-nowrap w-[10%]"> Tether USDt (BTC)</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$2,425.0000</td>
-                    <td class="border">$1,425.0000</td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/thumbs/bnb.png?v=032" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> Binance Coin</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$572.6 </td>
-                    <td class="border">$512.6 </td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/solana-sol-logo.png?v=032" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> Solana</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$161.43 </td>
-                    <td class="border">$30.00</td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/thumbs/xrp.png?v=032" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> XRP</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$0.56 </td>
-                    <td class="border">$0.23</td>
-                </tr>
-
-                <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
-                    <td class="border">
-                        <div class="flex items-center justify-center gap-3">
-                            <img src="https://cryptologos.cc/logos/thumbs/tron.png?v=032" alt=""
-                                class="w-5 h-5 object-cover">
-                            <span class="w-[10%] text-nowrap"> TRON(TRX)</span>
-                        </div>
-
-                    </td>
-
-                    <td class="border">$0.13 </td>
-                    <td class="border">$0.10</td>
                 </tr>
             </tbody>
         </table>
