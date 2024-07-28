@@ -32,7 +32,8 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
             coinList.innerHTML = ""
             coins.forEach((coin, index) => {
                 index + 1 <= 10 && (
-                    coinList.innerHTML += ` <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
+                    coinList.innerHTML += ` 
+                    <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
                     <td class="border">
                         <div class="flex items-center md:justify-center gap-3 pl-2">
                             <img src='${coin.image}'alt=""
