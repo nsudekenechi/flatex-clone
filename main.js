@@ -29,10 +29,11 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
     .then(response => response.json())
     .then(coins => {
         setTimeout(() => {
-            coinList.innerHTML = ""
-            coins.forEach((coin, index) => {
-                index + 1 <= 10 && (
-                    coinList.innerHTML += ` 
+            if (coinList) {
+                coinList.innerHTML = ""
+                coins.forEach((coin, index) => {
+                    index + 1 <= 10 && (
+                        coinList.innerHTML += ` 
                     <tr class="border h-14 hover:bg-[#fcfcfc] duration-300">
                     <td class="border">
                         <div class="flex items-center md:justify-center gap-3 pl-2">
@@ -52,8 +53,9 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
                     </div>
                     </td>
                 </tr>`
-                )
-            })
+                    )
+                })
+            }
         }, 500)
     }).catch(err => console.error(err));
 

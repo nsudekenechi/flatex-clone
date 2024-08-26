@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save, trade &amp; invest with the professionals | flatex.de</title>
+    <title>Save, trade &amp; invest with the professionals | Phanex</title>
     <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon64x64 (1).png">
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,6 +36,10 @@
 <body>
     <div class="hidden" id="icons"></div>
 
+
+
+
+
     <!-- Nav bar Desktop-->
     <nav
         class="bg-white px-10  py-5 hidden md:flex justify-between items-center sticky w-[100%]  border-b top-0 left-0 z-50">
@@ -46,6 +50,8 @@
             <li><a href="./index.html" class="hover:underline">Home</a></li>
             <li><a href="./about.html" class="hover:underline">About Us</a></li>
         </ul>
+
+        <div id="google_translate_element" class="absolute top-20"></div>
     </nav>
 
     <!-- Nav bar Mobile-->
@@ -60,6 +66,9 @@
                 <span class="inline-block h-1 w-5 border-b-2 border-black duration-300  translate-y-0 rotate-0"></span>
             </li>
         </ul>
+
+        <div id="google_translate_element" class="absolute top-[100%]  w-[100%] left-0 z-50">
+        </div>
         <!-- Overlay -->
         <div class="absolute h-[100vh] w-[80%]   left-0 top-0 translate-x-[-100%] duration-300" id="overlay">
             <div class="bg-white border h-[100%]">
@@ -78,7 +87,8 @@
         </div>
     </nav>
 
-    <section class="h-[600px] md:h-[90vh] relative">
+
+    <section class="h-[600px] md:h-[90vh] relative x`">
         <img src="https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg" alt=""
             class="w-[100%] h-[100%] object-cover ">
         <div class="absolute w-[100%] h-[100%] grid md:grid-cols-2 top-0 left-0 p-5 md:p-20 bg-black/10">
@@ -178,18 +188,54 @@
 
 
 
-            HOW DO I SUBMIT A TICKET
 
+        </p>
+
+        <h1 class="text-3xl font-semibold mb-5">
+            HOW DO I SUBMIT A TICKET?
+
+
+
+        </h1>
+        <p class="mb-5">
             Use the form on the footer part of the website to submit a ticket, submitted tickets takes 0- 1 hour to be
             replied.
 
-            OTHERS
-            Contact support for enquiries
 
-            SUBMIT A TICKET
+
         </p>
+        <div class="grid md:grid-cols-2 py-10">
+            <form action="" class="grid md:grid-cols-2 gap-5">
+                <div class="grid gap-2">
+                    <label for="name">First name</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                </div>
+                <div class="grid gap-2">
+                    <label for="name">Last name</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                </div>
+                <div class="grid gap-2">
+                    <label for="name">Email</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                </div>
+                <div class="grid gap-2">
+                    <label for="name">Phone Number</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                </div>
+                <div class="grid gap-2 md:col-span-2">
+                    <label for="message">Message</label>
+                    <textarea name="" id=""
+                        class="border w-[100%] h-[100px] p-3 resize-none rounded-xl text-sm outline-secondary"></textarea>
+                </div>
+                <div class="md:col-span-2">
+
+                    <button class="bg-secondary py-3 px-10 text-white text-sm"> SUBMIT A TICKET</button>
+                </div>
+            </form>
+        </div>
     </section>
-    <footer class=" bg-[#2c2a2b] w-full  pt-[50px] pb-[25px] px-5 md:px-[50px]">
+
+    <footer class=" bg-[#2c2a2b] w-full  pt-[50px] pb-[25px] px-5 md:px-[50px] mt-20">
         <div class="grid md:grid-cols-2 gap-10">
             <div class="flex gap-2 text-white ">
                 <div class="">
@@ -223,6 +269,32 @@
             </div>
         </div>
     </footer>
+    <style>
+        .goog-te-gadget>span {
+            display: none;
+        }
+
+        .goog-te-combo {
+            border: solid black;
+            padding: 5px;
+            color: black;
+        }
+
+        .goog-te-gadget {
+            color: transparent;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script src="./main.js"></script>
 
 </body>
