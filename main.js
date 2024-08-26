@@ -56,3 +56,28 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
             })
         }, 500)
     }).catch(err => console.error(err));
+
+let navbar = document.querySelector("#navbar")
+let overlay = document.querySelector("#overlay")
+navbar.onclick = () => {
+    let spans = document.querySelectorAll("#navbar span");
+    let span1 = spans[0];
+    let span2 = spans[1]
+    let span3 = spans[2]
+    if (span1.classList.contains("translate-y-0")) {
+        span1.classList.replace("translate-y-0", "translate-y-1");
+        span1.classList.replace("rotate-0", "rotate-45");
+        span2.classList.replace("opacity-1", "opacity-0")
+        span3.classList.replace("translate-y-0", "-translate-y-2");
+        span3.classList.replace("rotate-0", "-rotate-45");
+        overlay.classList.replace("translate-x-[-100%]", "translate-x-0")
+    } else {
+        span1.classList.replace("translate-y-1", "translate-y-0");
+        span1.classList.replace("rotate-45", "rotate-0");
+        span2.classList.replace("opacity-0", "opacity-1")
+        span3.classList.replace("-translate-y-2", "translate-y-0");
+        span3.classList.replace("-rotate-45", "rotate-0");
+        overlay.classList.replace("translate-x-0", "translate-x-[-100%]")
+    }
+
+}

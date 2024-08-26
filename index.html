@@ -35,15 +35,55 @@
 
 <body class="font-Ubuntu">
     <div class="hidden" id="icons"></div>
+    <!-- Nav bar Desktop-->
+    <nav
+        class="bg-white px-10  py-5 hidden md:flex justify-between items-center sticky w-[100%]  border-b top-0 left-0 z-50">
+        <ul>
+            <li><a href=""><img src="./img/Phanex.png" alt="" width="150"></a></li>
+        </ul>
+        <ul class="flex gap-14">
+            <li><a href="./index.html" class="hover:underline">Home</a></li>
+            <li><a href="./about.html" class="hover:underline">About Us</a></li>
+        </ul>
+    </nav>
 
+    <!-- Nav bar Mobile-->
+    <nav class="bg-white p-5  flex md:hidden justify-between items-center sticky w-[100%]  border-b top-0 left-0 z-50">
+        <ul>
+            <li><a href=""><img src="./img/Phanex.png" alt="" width="80"></a></li>
+        </ul>
+        <ul>
+            <li class="grid gap-y-[2px]" id="navbar">
+                <span class="inline-block h-1 w-5 border-b-2 border-black duration-300 translate-y-0 rotate-0"></span>
+                <span class="inline-block h-1 w-5 border-b-2 border-black duration-300 opacity-1"></span>
+                <span class="inline-block h-1 w-5 border-b-2 border-black duration-300  translate-y-0 rotate-0"></span>
+            </li>
+        </ul>
+        <!-- Overlay -->
+        <div class="absolute h-[100vh] w-[80%]   left-0 top-0 translate-x-[-100%] duration-300" id="overlay">
+            <div class="bg-white border h-[100%]">
+
+                <ul class="p-5 text-sm mb-5">
+                    <li class=""><a href=""><img src="./img/Phanex.png" alt="" width="80"></a></li>
+                </ul>
+                <ul class="text-sm">
+                    <li class="py-3 border px-3"><a href="./index.html">Home</a></li>
+                    <li class="py-3 border px-3"><a href="./about.html">About Us</a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
 
     <!-- Show Case -->
-    <section class="h-[90vh] relative">
+    <section class="h-[600px] md:h-[90vh] relative">
         <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg" alt=""
             class="w-[100%] h-[100%] object-cover">
         <div class="absolute w-[100%] h-[100%] grid md:grid-cols-2 top-0 left-0 p-5 md:p-20 bg-black/10">
             <div>
-                <h1 class="mb-5 text-4xl md:text-5xl font-bold text-white">
+                <h1 class="mb-5 text-3xl md:text-5xl font-bold text-white">
                     <span class="text-secondary">Phanex</span> brokerage: Anyone can collaborate with the
                     right professionals
                 </h1>
@@ -60,17 +100,17 @@
         </div>
         <div class="relative flex items-center justify-center mb-10 overflow-hidden border-b h-14 marquee-container">
             <div class="flex items-center gap-20 text-sm text-black text-nowrap marquee">
-                <p class="flex items-center gap-3">Tradegate: flatexDEGIRO AG 12.60€ 0.19
+                <p class="flex items-center gap-3">Tradegate: Phatex AG 12.60€ 0.19
                     stockup
                     <img src="./img/stockup.svg" class="w-3 h-3" alt="">
                     (1.53%)
                 </p>
 
                 <p class="flex items-center gap-3 ">
-                    flatexDEGIRO AG 12.60€ 0.19
+                    Phatex AG 12.60€ 0.19
                     <img src="./img/logo_flatexdegiro.svg" alt="" class="h-3 ">
                 </p>
-                <p class="flex items-center gap-3 ">Tradegate: flatexDEGIRO AG 12.60€ 0.19
+                <p class="flex items-center gap-3 ">Tradegate: Phatex AG 12.60€ 0.19
                     stockup
                     <img src="./img/stockup.svg" class="w-3 h-3" alt="">
                     (1.53%)
