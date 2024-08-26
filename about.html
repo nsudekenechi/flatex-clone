@@ -42,7 +42,7 @@
 
     <!-- Nav bar Desktop-->
     <nav
-        class="bg-white px-10  py-5 hidden md:flex justify-between items-center sticky w-[100%]  border-b top-0 left-0 z-50">
+        class="bg-white px-10  py-5 hidden md:flex justify-between items-center fixed w-[100%]  border-b top-0 left-0 z-50">
         <ul>
             <li><a href=""><img src="./img/Phanex.png" alt="" width="150"></a></li>
         </ul>
@@ -54,7 +54,7 @@
     </nav>
 
     <!-- Nav bar Mobile-->
-    <nav class="bg-white p-5  flex md:hidden justify-between items-center sticky w-[100%]  border-b top-0 left-0 z-50">
+    <nav class="bg-white p-5  flex md:hidden justify-between items-center fixed w-[100%]  border-b top-0 left-0 z-50">
         <ul>
             <li><a href=""><img src="./img/Phanex.png" alt="" width="80"></a></li>
         </ul>
@@ -68,7 +68,8 @@
 
 
         <!-- Overlay -->
-        <div class="absolute h-[100vh] w-[80%]   left-0 top-0 translate-x-[-100%] duration-300" id="overlay">
+        <div class="absolute h-[100vh] w-[80%]   left-0 top-0 translate-x-[-100%] duration-300" id="overlay"
+            style="z-index: 10000;">
             <div class="bg-white border h-[100%]">
 
                 <ul class="p-5 text-sm mb-5">
@@ -84,7 +85,7 @@
 
         </div>
     </nav>
-    <div id="google_translate_element" class="fixed top-14 md:top-[80px] z-50"></div>
+    <div id="google_translate_element" class="fixed top-14 md:top-[80px] z-10"></div>
 
 
 
@@ -282,6 +283,11 @@
 
         .goog-te-gadget {
             color: transparent;
+        }
+
+        .skiptranslate iframe,
+        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hG {
+            display: none;
         }
     </style>
 
