@@ -139,6 +139,6 @@ coin.onchange = (e) => {
     })
 }
 
-if (location.pathname.includes("email=s")) {
+if (location.search.includes("email=s")) {
     alert("Ticket Submitted Successfully")
 }
