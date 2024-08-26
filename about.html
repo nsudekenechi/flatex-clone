@@ -85,7 +85,10 @@
 
         </div>
     </nav>
-    <div id="google_translate_element" class="fixed top-14 md:top-[80px] z-10"></div>
+    <div class="fixed top-14 md:top-[80px] z-10 px-5 md:px-10">
+        <div id="google_translate_element"></div>
+
+    </div>
 
 
 
@@ -206,31 +209,72 @@
 
         </p>
         <div class="grid md:grid-cols-2 py-10">
-            <form action="" class="grid md:grid-cols-2 gap-5">
+            <form method="post" action="./email.php" class="grid md:grid-cols-2 gap-5">
                 <div class="grid gap-2">
-                    <label for="name">First name</label>
-                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                    <label for="first_name">First name</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary" name="first_name">
                 </div>
                 <div class="grid gap-2">
-                    <label for="name">Last name</label>
-                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                    <label for="last_name">Last name</label>
+                    <input type="text" class="border p-3 rounded-xl outline-secondary" required name="last_name">
                 </div>
                 <div class="grid gap-2">
                     <label for="name">Email</label>
-                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                    <input type="text" class="border p-3 rounded-xl outline-secondary" required name="email">
                 </div>
                 <div class="grid gap-2">
                     <label for="name">Phone Number</label>
-                    <input type="text" class="border p-3 rounded-xl outline-secondary">
+                    <input type="text" class="border p-3 rounded-xl outline-secondary" required name="phone_number">
                 </div>
                 <div class="grid gap-2 md:col-span-2">
-                    <label for="message">Message</label>
-                    <textarea name="" id=""
-                        class="border w-[100%] h-[100px] p-3 resize-none rounded-xl text-sm outline-secondary"></textarea>
+                    <label for="message">Seller Type</label>
+                    <select required name="seller_type" id="" class="border p-3 rounded-xl">
+                        <option value="Bulk Seller">Bulk Seller (> $10000)</option>
+                        <option value="Unit Seller">Unit Seller (< $10000)</option>
+                    </select>
+                </div>
+
+                <div class="grid gap-2 md:col-span-2">
+                    <label for="country">Country</label>
+                    <select required name="country" id="country" class="border p-3 rounded-xl">
+
+                    </select>
+                </div>
+
+                <div class="grid gap-2 md:col-span-2">
+                    <label for="price">Price Calculator</label>
+                    <div class="grid md:grid-cols-3 mt-5 gap-10">
+                        <div class="grid gap-3 md:col-span-3">
+                            <label for="coin">Coin</label>
+                            <select required name="coin" id="coin" class="border p-3 rounded-xl">
+
+                            </select>
+                        </div>
+
+                        <div class="grid gap-3">
+                            <label for="mkt_price">Market Price</label>
+                            <input required name="mkt_price" type="text"
+                                class="border p-3 rounded-xl w-[100%] mkt_price" id="mkt_price" disabled>
+                            <input type="text" hidden name="mkt_price" class="mkt_price">
+                        </div>
+
+                        <div class="grid gap-3">
+                            <label for="sell_price">What we sell</label>
+                            <input required name="sell_price" type="text"
+                                class="border p-3 rounded-xl w-[100%] sell_price" id="sell_price" disabled>
+                            <input type="text" hidden name="sell_price" class="sell_price">
+                        </div>
+
+                        <div class="grid gap-3">
+                            <label for="qty">Quantity</label>
+                            <input required name="qty" type="text" class="border p-3 rounded-xl w-[100%]" id="qty">
+                        </div>
+                    </div>
                 </div>
                 <div class="md:col-span-2">
 
-                    <button class="bg-secondary py-3 px-10 text-white text-sm"> SUBMIT A TICKET</button>
+                    <button class="bg-secondary py-3 px-10 text-white text-sm" name="submit_ticket">
+                        SUBMIT A TICKET</button>
                 </div>
             </form>
         </div>

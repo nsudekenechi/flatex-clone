@@ -1,3 +1,4 @@
+
 fetch("./icon.html").then(res => res.text()).then(res => {
     document.querySelector("#icons").innerHTML = res
 })
@@ -17,6 +18,9 @@ const swiper = new Swiper('.swiper', {
 });
 const key = "CG-4MjDXpJJ2oCvPhUmUG5a5dCz";
 const coinList = document.querySelector("#coinList");
+let coin = document.querySelector("#coin");
+let mkt_price = document.querySelectorAll(".mkt_price")
+let sell_price = document.querySelectorAll(".sell_price")
 const options = {
 
     method: 'GET',
@@ -57,6 +61,27 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
                 })
             }
         }, 500)
+        if (coin) {
+            coins.forEach(item => {
+                let currPrice = item.current_price;
+                let mktPrice = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(currPrice);
+                let percent = item.current_price > 1 ? item.current_price * 0.3 : item.current_price * 0.4;
+                let sellPrice = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(item.current_price + percent)
+
+                coin.innerHTML += `<option data-sell_price='${sellPrice}'   data-mkt_price='${mktPrice}' value='${item.name}'>${item.name}  (${item.symbol.toUpperCase()})</option>`
+            })
+            mkt_price.forEach(item => {
+                item.value = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(coins[0].current_price)
+            })
+
+            let selectedPrice = coins[0].current_price
+            let percentage = selectedPrice > 1 ? selectedPrice * 0.3 : selectedPrice * 0.4;
+
+            sell_price.forEach(item => {
+                item.value = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(percentage + selectedPrice)
+            })
+        }
+
     }).catch(err => console.error(err));
 
 let navbar = document.querySelector("#navbar")
@@ -82,4 +107,34 @@ navbar.onclick = () => {
         overlay.classList.replace("translate-x-0", "translate-x-[-100%]")
     }
 
+}
+let country = document.querySelector("#country");
+if (country) {
+    fetch("./country.json").then(res => res.json()).then(data => {
+        data.country.forEach(item => {
+            country.innerHTML += `<option value=${item}>${item}</option>`
+        })
+
+    })
+}
+
+// when quantity changes, we want to change what we sell
+let quantity = document.querySelector("#qty")
+quantity.onkeyup = (e) => {
+    let mktPrice = parseFloat(mkt_price[0].value.replace(/[$,]/g, ""));
+    let percentage = mktPrice > 1 ? mktPrice * 0.3 : mktPrice * 0.4;
+    let sellPrice = parseFloat(mktPrice) + percentage;
+    sell_price.forEach(item => {
+        item.value = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(sellPrice * e.target.value)
+    })
+}
+
+coin.onchange = (e) => {
+    let selectedOption = coin.querySelector(`option[value='${e.target.value}']`)
+    mkt_price.forEach(item => {
+        item.value = selectedOption.dataset.mkt_price
+    })
+    sell_price.forEach(item => {
+        item.value = selectedOption.dataset.sell_price;
+    })
 }
