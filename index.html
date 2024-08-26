@@ -77,6 +77,12 @@
         </div>
     </nav>
 
+    <div class="fixed top-14 md:top-[80px] z-10 px-5 md:px-10 ">
+        <div id="google_translate_element"></div>
+
+    </div>
+
+
     <!-- Show Case -->
     <section class="h-[600px] md:h-[90vh] relative">
         <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg" alt=""
@@ -98,33 +104,44 @@
             <div></div>
 
         </div>
-        <div class="relative flex items-center justify-center mb-10 overflow-hidden border-b h-14 marquee-container">
-            <div class="flex items-center gap-20 text-sm text-black text-nowrap marquee">
-                <p class="flex items-center gap-3">Tradegate: Phatex AG 12.60€ 0.19
-                    stockup
-                    <img src="./img/stockup.svg" class="w-3 h-3" alt="">
-                    (1.53%)
-                </p>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
 
-                <p class="flex items-center gap-3 ">
-                    Phatex AG 12.60€ 0.19
-                    <img src="./img/logo_flatexdegiro.svg" alt="" class="h-3 ">
-                </p>
-                <p class="flex items-center gap-3 ">Tradegate: Phatex AG 12.60€ 0.19
-                    stockup
-                    <img src="./img/stockup.svg" class="w-3 h-3" alt="">
-                    (1.53%)
-                </p>
-
-                <p class="flex items-center gap-3">Phanex is a brand of the listed
-                    <img src="./img/logo_flatexdegiro.svg" alt="" class="h-3 ">
-                </p>
-
-
-
-
-            </div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            {
+                                "proName": "FOREXCOM:SPXUSD",
+                                "title": "S&P 500 Index"
+                            },
+                            {
+                                "proName": "FOREXCOM:NSXUSD",
+                                "title": "US 100 Cash CFD"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR to USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "Bitcoin"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "Ethereum"
+                            }
+                        ],
+                            "showSymbolLogo": true,
+                                "isTransparent": false,
+                                    "displayMode": "adaptive",
+                                        "colorTheme": "light",
+                                            "locale": "en"
+                    }
+                </script>
         </div>
+        <!-- TradingView Widget END -->
     </section>
 
     <!-- this is the section that we'd be working on -->
@@ -195,7 +212,7 @@
                         </svg>
 
                     </div>
-                    <h1 class="text-xl font-medium">&gt;2.80 million</h1>
+                    <h1 class="text-xl font-medium">267k+ </h1>
                     <p class="text-lg">Users</p>
                 </div>
 
@@ -251,8 +268,8 @@
     <!-- Prices that inspire ends-->
 
 
-    <section class="grid grid-cols-1 p-5 my-10 md:p-10 md:grid-cols-3">
-        <div class="md:col-span-2">
+    <section class="grid grid-cols-1 p-5 my-10 md:p-10 md:grid-cols-2">
+        <div class="">
             <h1 class="mb-10 text-xl md:text-4xl font-bold">Trade easily with the excellent platform</h1>
             <div class="flex items-center gap-2 mb-5 text-sm md:text-xl">
                 <img src="./img/check-black.svg" alt="">
@@ -272,7 +289,27 @@
             </div>
         </div>
         <div>
-            <img src="./img/csm_flatex_next_devices_fallback_bg_grau@2x_7a1783a532.png" alt="" width="">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                        {
+                            "height": "400",
+                                "symbol": "NASDAQ:AAPL",
+                                    "interval": "D",
+                                        "timezone": "Etc/UTC",
+                                            "theme": "light",
+                                                "style": "0",
+                                                    "locale": "en",
+                                                        "allow_symbol_change": true,
+                                                            "calendar": false,
+                                                                "support_host": "https://www.tradingview.com"
+                        }
+                    </script>
+            </div>
+            <!-- TradingView Widget END -->
         </div>
     </section>
 
@@ -354,6 +391,36 @@
         </div>
     </footer>
 
+    <style>
+        .goog-te-gadget>span {
+            display: none;
+        }
+
+        .goog-te-combo {
+            border: solid black;
+            padding: 5px;
+            color: black;
+        }
+
+        .goog-te-gadget {
+            color: transparent;
+        }
+
+        .skiptranslate iframe,
+        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hG {
+            display: none;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./main.js"></script>
 
 </body>

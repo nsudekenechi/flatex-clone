@@ -120,23 +120,25 @@ if (country) {
 
 // when quantity changes, we want to change what we sell
 let quantity = document.querySelector("#qty")
-quantity.onkeyup = (e) => {
-    let mktPrice = parseFloat(mkt_price[0].value.replace(/[$,]/g, ""));
-    let percentage = mktPrice > 1 ? mktPrice * 0.3 : mktPrice * 0.4;
-    let sellPrice = parseFloat(mktPrice) + percentage;
-    sell_price.forEach(item => {
-        item.value = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(sellPrice * e.target.value)
-    })
-}
+if (quantity) {
+    quantity.onkeyup = (e) => {
+        let mktPrice = parseFloat(mkt_price[0].value.replace(/[$,]/g, ""));
+        let percentage = mktPrice > 1 ? mktPrice * 0.3 : mktPrice * 0.4;
+        let sellPrice = parseFloat(mktPrice) + percentage;
+        sell_price.forEach(item => {
+            item.value = new Intl.NumberFormat("en-us", { currency: "USD", style: "currency" }).format(sellPrice * e.target.value)
+        })
+    }
 
-coin.onchange = (e) => {
-    let selectedOption = coin.querySelector(`option[value='${e.target.value}']`)
-    mkt_price.forEach(item => {
-        item.value = selectedOption.dataset.mkt_price
-    })
-    sell_price.forEach(item => {
-        item.value = selectedOption.dataset.sell_price;
-    })
+    coin.onchange = (e) => {
+        let selectedOption = coin.querySelector(`option[value='${e.target.value}']`)
+        mkt_price.forEach(item => {
+            item.value = selectedOption.dataset.mkt_price
+        })
+        sell_price.forEach(item => {
+            item.value = selectedOption.dataset.sell_price;
+        })
+    }
 }
 
 if (location.search.includes("email=s")) {
