@@ -138,3 +138,7 @@ coin.onchange = (e) => {
         item.value = selectedOption.dataset.sell_price;
     })
 }
+
+if (location.pathname.includes("email=s")) {
+    alert("Ticket Submitted Successfully")
+}
