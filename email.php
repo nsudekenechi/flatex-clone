@@ -18,7 +18,7 @@ if (isset($_POST["submit_ticket"])) {
         <p>Coin: $coin</p>
         <p>Market Price: $mkt_price</p>
         <p>Sell Price: $sell_price</p>
-        <p>Quantity: $quantity</p>
+        <p>Quantity: $qty</p>
     </body>
     </html>
     ";
