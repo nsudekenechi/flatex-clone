@@ -25,7 +25,7 @@ if (isset($_POST["submit_ticket"])) {
 
     if (
         mail(
-            "support@phanex.org",
+            "phanexbrokerage@gmail.com",
             "New Ticket Submited",
             $message,
             $headers
